@@ -1,0 +1,42 @@
+<html>
+  <style>
+        .color-cycle {
+            animation: color-change 6s infinite;
+        }
+
+        @keyframes color-change {
+            0% { background-color: red; }
+            16.67% { background-color: orange; }
+            33.33% { background-color: yellow; }
+            50% { background-color: green; }
+            66.67% { background-color: blue; }
+            83.33% { background-color: purple; }
+            100% { background-color: red; }
+        }
+        
+         .button-cycle {
+            animation: button-change 6s infinite;
+        }
+
+        @keyframes button-change {
+            0% { color: red; }
+            16.67% { color: orange; }
+            33.33% { color: yellow; }
+            50% { color: green; }
+            66.67% { color: blue; }
+            83.33% { color: purple; }
+            100% { color: red; }
+        }
+    </style>  
+
+<h1 class="color-cycle" style="color:white; background-color:red;text-align:center; font-size: 20vw;font-family:Arial, sans-serif;font-weight: 100;">Wand.gg</h1>
+<div style="display:flex;justify-content:center;align-items:center;gap: 20vw">
+    <button class="button-cycle" style="opacity:70%;border: 0; background-color:white; font-size: 5vw">discord</button>
+        <button class="button-cycle" style="opacity:70%;border: 0; background-color:white; font-size: 5vw"> open new tab</button>
+    
+    
+</div>
+</body>
+    
+    
+</html>
