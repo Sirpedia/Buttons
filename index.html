@@ -57,8 +57,33 @@
   <input id="xpos">
   <h2> ypos (vh) </h2>
   <input id="ypos">
-  <button class="button-cycle" style="opacity:70%;border: 0; background-color:white; font-size: 5vw"> Update! </button>
-  <button style="position:absolute; left: 50vw"> no text added </button>
+  <button onclick="update()" class="button-cycle" style="opacity:70%;border: 0; background-color:white; font-size: 5vw"> Update! </button>
+  <button id="button" style="position:absolute; left: 50vw"> no text added </button>
+
+
+  <script>
+function update() {
+const text = document.getElementById("text")
+const func = document.getElementById("function")
+const borderwidth = document.getElementById("borderwidth")
+const bordertype = document.getElementById("bordertype")
+const bordercolor = document.getElementById("bordercolor")
+const backgroundcolor = document.getElementById("backgroundcolor")
+const textcolor = document.getElementById("textcolor")
+const borderradius = document.getElementById("borderradius")
+const xpos = document.getElementById("xpos")
+const ypos = document.getElementById("ypos")
+const button = document.getElementById("button")
+
+button.innerHTML = text.value
+
+}
+
+
+
+
+    
+  </script>
 </body>
     
     
