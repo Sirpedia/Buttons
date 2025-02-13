@@ -59,7 +59,7 @@
   <input id="ypos">
   <button onclick="update()" class="button-cycle" style="opacity:70%;border: 0; background-color:white; font-size: 5vw"> Update! </button>
   <button id="button" style="position:absolute; left: 50vw"> no text added </button>
-
+  <textarea id="code">
 
   <script>
 function update() {
@@ -74,6 +74,7 @@ const borderradius = document.getElementById("borderradius")
 const xpos = document.getElementById("xpos")
 const ypos = document.getElementById("ypos")
 const button = document.getElementById("button")
+const code = document.getElementById("code")
 
 button.innerHTML = text.value
 button.onclick = func.value
@@ -84,6 +85,8 @@ button.style.borderRadius = borderradius.value
 button.style.position = absolute
 button.style.top = ypos.value
 button.style.left = xpos.value
+code.value = '<button onclick="' + func.value + '">Click me</button>';
+
 }
 
 
